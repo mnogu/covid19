@@ -27,7 +27,7 @@ jobs:
       - run: yarn run test
       - run: yarn run generate:deploy
       - run: cp ui-test\dummy.json dist\data/\data.json
-      - run: Set up Python
+      - name: Set up Python
         uses: actions/setup-python@v1
         with:
           python-version: 3.8
